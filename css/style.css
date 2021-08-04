@@ -1,0 +1,283 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.print_pages {
+  size: A4;
+  page-break-before: always;
+}
+
+.no_print {
+  display: display-box;
+}
+
+div.form {
+  position: absolute;
+  top: 20.0px;
+  left: 20.0px;
+  width: 420.0px;
+}
+
+div#showMonthHoroscope {
+  width: 140.0px;
+  margin-right: 10.0px;
+  float: left;
+}
+
+div#showStar {
+  width: 100.0px;
+  margin-right: 10.0px;
+  float: left;
+}
+
+
+div.manual {
+  position: absolute;
+  top: 1288.0px;
+  left: 0.0px;
+  width:420.0px;
+  height: 594.0px; 
+  padding: 30.0px;
+  font-size: small;
+  text-align: justify;
+  line-height: 140%;
+}
+
+p.ver {width:100.0px; height:15.0px; position:absolute; top:100.0px; left:320.0px;
+  font-size: xx-small;
+}
+
+p.memo {width:100.0px; height:15.0px; position:absolute; top:100.0px; left:40.0px;
+  font-size: xx-small;
+}
+
+img#trim {width: 400.0px; height: 560.0px; position: absolute; top: calc(10.0px + 100.0px); left: calc(10.0px + 0.0px);}
+img#dot {width: 360.0px; height: 514.0px; position: absolute; top: calc(40.0px + 100.0px); left: calc(30.0px + 0.0px);}
+
+img.card {width:178.0px; height:126.0px;}
+img#card1 {position:absolute; top:calc(100.0px + 40.0px + 126.0px * 0); left:32.0px;}
+img#card2 {position:absolute; top:calc(100.0px + 40.0px + 126.0px * 0); left:210.0px;}
+img#card3 {position:absolute; top:calc(100.0px + 40.0px + 126.0px * 1); left:32.0px;}
+img#card4 {position:absolute; top:calc(100.0px + 40.0px + 126.0px * 1); left:210.0px;}
+img#card5 {position:absolute; top:calc(100.0px + 40.0px + 126.0px * 2); left:32.0px;}
+img#card6 {position:absolute; top:calc(100.0px + 40.0px + 126.0px * 2); left:210.0px;}
+img#card7 {position:absolute; top:calc(100.0px + 40.0px + 126.0px * 3); left:32.0px;}
+img#card8 {position:absolute; top:calc(100.0px + 40.0px + 126.0px * 3); left:210.0px;}
+
+img.star {width: 12.8px; height: 9.6px;}
+img#star2 {position:absolute; top:calc(100.0px + 40.0px + 20.0px + 126.0px * 0 + 70.0px); left:calc(32.0px + 178.0px +  40.0px);}
+img#star4 {position:absolute; top:calc(100.0px + 40.0px + 20.0px + 126.0px * 2 + 40.0px); left:calc(32.0px + 178.0px +  86.0px);}
+img#star6 {position:absolute; top:calc(100.0px + 40.0px + 20.0px + 126.0px * 1 +  4.0px); left:calc(32.0px + 178.0px +  40.0px);}
+img#star8 {position:absolute; top:calc(100.0px + 40.0px + 20.0px + 126.0px * 3 + 10.0px); left:calc(32.0px + 178.0px + 130.0px);}
+
+  /*
+      2 4
+    1     6
+      3 5
+  */
+img.card-horoscope {width:32.0px; height:32.0px;}
+
+img#card-horoscope1-1 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 0); left:calc(32.0px + 16.0px + 40.0px * 0);}
+img#card-horoscope1-2 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 0); left:calc(32.0px + 16.0px + 40.0px * 1);}
+img#card-horoscope1-3 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 0); left:calc(32.0px + 16.0px + 40.0px * 1);}
+img#card-horoscope1-4 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 0); left:calc(32.0px + 16.0px + 40.0px * 2);}
+img#card-horoscope1-5 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 0); left:calc(32.0px + 16.0px + 40.0px * 2);}
+img#card-horoscope1-6 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 0); left:calc(32.0px + 16.0px + 40.0px * 3);}
+
+img#card-horoscope2-1 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 0); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 0);}
+img#card-horoscope2-2 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 0); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 1);}
+img#card-horoscope2-3 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 0); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 1);}
+img#card-horoscope2-4 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 0); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 2);}
+img#card-horoscope2-5 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 0); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 2);}
+img#card-horoscope2-6 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 0); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 3);}
+
+img#card-horoscope3-1 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 1); left:calc(32.0px + 16.0px + 40.0px * 0);}
+img#card-horoscope3-2 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 1); left:calc(32.0px + 16.0px + 40.0px * 1);}
+img#card-horoscope3-3 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 1); left:calc(32.0px + 16.0px + 40.0px * 1);}
+img#card-horoscope3-4 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 1); left:calc(32.0px + 16.0px + 40.0px * 2);}
+img#card-horoscope3-5 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 1); left:calc(32.0px + 16.0px + 40.0px * 2);}
+img#card-horoscope3-6 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 1); left:calc(32.0px + 16.0px + 40.0px * 3);}
+
+img#card-horoscope4-1 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 1); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 0);}
+img#card-horoscope4-2 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 1); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 1);}
+img#card-horoscope4-3 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 1); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 1);}
+img#card-horoscope4-4 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 1); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 2);}
+img#card-horoscope4-5 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 1); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 2);}
+img#card-horoscope4-6 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 1); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 3);}
+
+img#card-horoscope5-1 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 2); left:calc(32.0px + 16.0px + 40.0px * 0);}
+img#card-horoscope5-2 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 2); left:calc(32.0px + 16.0px + 40.0px * 1);}
+img#card-horoscope5-3 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 2); left:calc(32.0px + 16.0px + 40.0px * 1);}
+img#card-horoscope5-4 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 2); left:calc(32.0px + 16.0px + 40.0px * 2);}
+img#card-horoscope5-5 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 2); left:calc(32.0px + 16.0px + 40.0px * 2);}
+img#card-horoscope5-6 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 2); left:calc(32.0px + 16.0px + 40.0px * 3);}
+
+img#card-horoscope6-1 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 2); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 0);}
+img#card-horoscope6-2 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 2); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 1);}
+img#card-horoscope6-3 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 2); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 1);}
+img#card-horoscope6-4 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 2); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 2);}
+img#card-horoscope6-5 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 2); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 2);}
+img#card-horoscope6-6 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 2); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 3);}
+
+img#card-horoscope7-1 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 3); left:calc(32.0px + 16.0px + 40.0px * 0);}
+img#card-horoscope7-2 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 3); left:calc(32.0px + 16.0px + 40.0px * 1);}
+img#card-horoscope7-3 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 3); left:calc(32.0px + 16.0px + 40.0px * 1);}
+img#card-horoscope7-4 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 3); left:calc(32.0px + 16.0px + 40.0px * 2);}
+img#card-horoscope7-5 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 3); left:calc(32.0px + 16.0px + 40.0px * 2);}
+img#card-horoscope7-6 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 3); left:calc(32.0px + 16.0px + 40.0px * 3);}
+
+img#card-horoscope8-1 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 3); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 0);}
+img#card-horoscope8-2 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 3); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 1);}
+img#card-horoscope8-3 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 3); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 1);}
+img#card-horoscope8-4 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 36.0px + 126.0px * 3); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 2);}
+img#card-horoscope8-5 {position:absolute; top:calc(100.0px + 40.0px + 64.0px +  4.0px + 126.0px * 3); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 2);}
+img#card-horoscope8-6 {position:absolute; top:calc(100.0px + 40.0px + 64.0px - 16.0px + 126.0px * 3); left:calc(32.0px + 16.0px + 178.0px + 40.0px * 3);}
+
+div.card-month {
+  font-family: 'Kosugi Maru', sans-serif;
+  color: black;
+  font-weight: bold;
+  width: 45px;
+  font-size: 12pt;
+  text-align: right;
+}
+
+div#card-month1-1 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 0); left:calc(32.0px + 60.0px * 0);}
+div#card-month1-2 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 0); left:calc(32.0px + 60.0px * 1);}
+div#card-month1-3 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 0); left:calc(32.0px + 60.0px * 2);}
+div#card-month1-4 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 0); left:calc(32.0px + 60.0px * 0);}
+div#card-month1-5 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 0); left:calc(32.0px + 60.0px * 1);}
+div#card-month1-6 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 0); left:calc(32.0px + 60.0px * 2);}
+
+div#card-month2-1 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 0); left:calc(212.0px + 60.0px * 0);}
+div#card-month2-2 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 0); left:calc(212.0px + 60.0px * 1);}
+div#card-month2-3 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 0); left:calc(212.0px + 60.0px * 2);}
+div#card-month2-4 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 0); left:calc(212.0px + 60.0px * 0);}
+div#card-month2-5 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 0); left:calc(212.0px + 60.0px * 1);}
+div#card-month2-6 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 0); left:calc(212.0px + 60.0px * 2);}
+
+div#card-month3-1 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 1); left:calc(32.0px + 60.0px * 0);}
+div#card-month3-2 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 1); left:calc(32.0px + 60.0px * 1);}
+div#card-month3-3 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 1); left:calc(32.0px + 60.0px * 2);}
+div#card-month3-4 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 1); left:calc(32.0px + 60.0px * 0);}
+div#card-month3-5 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 1); left:calc(32.0px + 60.0px * 1);}
+div#card-month3-6 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 1); left:calc(32.0px + 60.0px * 2);}
+
+div#card-month4-1 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 1); left:calc(212.0px + 60.0px * 0);}
+div#card-month4-2 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 1); left:calc(212.0px + 60.0px * 1);}
+div#card-month4-3 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 1); left:calc(212.0px + 60.0px * 2);}
+div#card-month4-4 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 1); left:calc(212.0px + 60.0px * 0);}
+div#card-month4-5 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 1); left:calc(212.0px + 60.0px * 1);}
+div#card-month4-6 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 1); left:calc(212.0px + 60.0px * 2);}
+
+div#card-month5-1 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 2); left:calc(32.0px + 60.0px * 0);}
+div#card-month5-2 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 2); left:calc(32.0px + 60.0px * 1);}
+div#card-month5-3 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 2); left:calc(32.0px + 60.0px * 2);}
+div#card-month5-4 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 2); left:calc(32.0px + 60.0px * 0);}
+div#card-month5-5 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 2); left:calc(32.0px + 60.0px * 1);}
+div#card-month5-6 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 2); left:calc(32.0px + 60.0px * 2);}
+
+div#card-month6-1 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 2); left:calc(212.0px + 60.0px * 0);}
+div#card-month6-2 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 2); left:calc(212.0px + 60.0px * 1);}
+div#card-month6-3 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 2); left:calc(212.0px + 60.0px * 2);}
+div#card-month6-4 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 2); left:calc(212.0px + 60.0px * 0);}
+div#card-month6-5 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 2); left:calc(212.0px + 60.0px * 1);}
+div#card-month6-6 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 2); left:calc(212.0px + 60.0px * 2);}
+
+div#card-month7-1 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 3); left:calc(32.0px + 60.0px * 0);}
+div#card-month7-2 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 3); left:calc(32.0px + 60.0px * 1);}
+div#card-month7-3 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 3); left:calc(32.0px + 60.0px * 2);}
+div#card-month7-4 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 3); left:calc(32.0px + 60.0px * 0);}
+div#card-month7-5 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 3); left:calc(32.0px + 60.0px * 1);}
+div#card-month7-6 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 3); left:calc(32.0px + 60.0px * 2);}
+
+div#card-month8-1 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 3); left:calc(212.0px + 60.0px * 0);}
+div#card-month8-2 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 3); left:calc(212.0px + 60.0px * 1);}
+div#card-month8-3 {position:absolute; top:calc(100.0px + 40.0px + 36.0px +  0.0px + 126.0px * 3); left:calc(212.0px + 60.0px * 2);}
+div#card-month8-4 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 3); left:calc(212.0px + 60.0px * 0);}
+div#card-month8-5 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 3); left:calc(212.0px + 60.0px * 1);}
+div#card-month8-6 {position:absolute; top:calc(100.0px + 40.0px + 36.0px + 38.0px + 126.0px * 3); left:calc(212.0px + 60.0px * 2);}
+
+
+div.card-day {
+  font-family: 'Kosugi Maru', sans-serif;
+  color: black;
+  font-weight: normal;
+  width: 178px;
+  height: 20px;
+  font-size: 8pt;
+  text-align: center;
+  /* border: 1px solid; */
+  padding: 0px 6px;
+}
+
+div#card-day1-1 {position:absolute; top:calc(100.0px + 40.0px +   4.0px + 126.0px * 0); left:calc(32.0px + 178.0px * 0);}
+div#card-day1-2 {position:absolute; top:calc(100.0px + 40.0px + 104.0px + 126.0px * 0); left:calc(32.0px + 178.0px * 0);}
+div#card-day2-1 {position:absolute; top:calc(100.0px + 40.0px +   4.0px + 126.0px * 0); left:calc(32.0px + 178.0px * 1);}
+div#card-day2-2 {position:absolute; top:calc(100.0px + 40.0px + 104.0px + 126.0px * 0); left:calc(32.0px + 178.0px * 1);}
+div#card-day3-1 {position:absolute; top:calc(100.0px + 40.0px +   4.0px + 126.0px * 1); left:calc(32.0px + 178.0px * 0);}
+div#card-day3-2 {position:absolute; top:calc(100.0px + 40.0px + 104.0px + 126.0px * 1); left:calc(32.0px + 178.0px * 0);}
+div#card-day4-1 {position:absolute; top:calc(100.0px + 40.0px +   4.0px + 126.0px * 1); left:calc(32.0px + 178.0px * 1);}
+div#card-day4-2 {position:absolute; top:calc(100.0px + 40.0px + 104.0px + 126.0px * 1); left:calc(32.0px + 178.0px * 1);}
+div#card-day5-1 {position:absolute; top:calc(100.0px + 40.0px +   4.0px + 126.0px * 2); left:calc(32.0px + 178.0px * 0);}
+div#card-day5-2 {position:absolute; top:calc(100.0px + 40.0px + 104.0px + 126.0px * 2); left:calc(32.0px + 178.0px * 0);}
+div#card-day6-1 {position:absolute; top:calc(100.0px + 40.0px +   4.0px + 126.0px * 2); left:calc(32.0px + 178.0px * 1);}
+div#card-day6-2 {position:absolute; top:calc(100.0px + 40.0px + 104.0px + 126.0px * 2); left:calc(32.0px + 178.0px * 1);}
+div#card-day7-1 {position:absolute; top:calc(100.0px + 40.0px +   4.0px + 126.0px * 3); left:calc(32.0px + 178.0px * 0);}
+div#card-day7-2 {position:absolute; top:calc(100.0px + 40.0px + 104.0px + 126.0px * 3); left:calc(32.0px + 178.0px * 0);}
+div#card-day8-1 {position:absolute; top:calc(100.0px + 40.0px +   4.0px + 126.0px * 3); left:calc(32.0px + 178.0px * 1);}
+div#card-day8-2 {position:absolute; top:calc(100.0px + 40.0px + 104.0px + 126.0px * 3); left:calc(32.0px + 178.0px * 1);}
+
+div.card-day ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  overflow: hidden;
+  text-align: center;
+
+}
+ 
+div.card-day li {
+  width: calc(168px / 8);
+  text-align: center;
+  text-decoration: none;
+  float: left;
+  /* background-color: aqua; */
+}
+
+
+img#cake {width: 360.0px; height: 494.0px; position: absolute; top: calc(46.0px + 694.0px); left: calc(30.0px + 0.0px);}
+
+div#birthdayname {
+  font-family: 'Kosugi Maru', sans-serif;
+  color: #ff9;
+  font-weight: normal;
+  font-size: 12pt;
+
+  position:absolute;
+  top: calc(932.0px - 14.0px);
+  left: 116.0px;
+}
+
+div#happybirthday {
+  font-family: 'Kosugi Maru', sans-serif;
+  color: #ff9;
+  font-weight: normal;
+  font-size: 12pt;
+
+  position:absolute;
+  top: calc(954.0px - 14.0px);
+  left: 116.0px;
+}
