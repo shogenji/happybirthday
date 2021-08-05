@@ -16,71 +16,68 @@
 <body>
 
 
-  <div id="input_form">
+  <div id="title" class="no_print">
     <h2>『誕生日おめでとう！』</h2>
+  </div>
 
+  <div id="efect" class="no_print">
     <p>
       よく混ぜたカードを、誕生月（星座）が描かれているカードと描かれていないカードに分けて重ねます。
       次に誕生日が描かれているカードと描かれていないカードに分けて重ねます。
       カードを上から1枚ずつ並べて、表向きにすると「誕生日ケーキ」が現れます。
     </p>
-
-    <div class="form no_print">
-      <form name="form" id="id_form" action="">
-        名　前：
-        <input name="textBoxName" id="id_textBoxName" type="text" size="25" value="るいちゃん" /><br>
-        誕生日：
-        <select name="selectMonth" id="id_selectMonth"></select> 月
-        <select name="selectDay" id="id_selectDay"></select> 日<br>
-        <div id="showMonthHoroscope">
-          <input name="radioMonthHoroscope" id="radioMonth" type="radio" value="month" checked><label for="radioMonth">誕生月</label>
-          <input name="radioMonthHoroscope" id="radioHoroscope" type="radio" value="horoscope"><label for="radioHoroscope">星座</label>
-        </div>
-        <div id="showStar">
-          <label for="checkboxStar">流れ星：</label><input type="checkbox" name="checkboxStar" id="checkboxStar" checked>
-        </div>
-        <!--input type="button" value="生成" onclick="rearrangeCards();" /-->
-        <input type="button" value="印刷" onclick="window.print();">
-      </form>
-    </div>
+  </div>
+  
+  <div id="input_form" class="no_print">
+    <form name="form" id="id_form" action="">
+      名　前：
+      <input name="textBoxName" id="id_textBoxName" type="text" size="25" value="るいちゃん" /><br>
+      誕生日：
+      <select name="selectMonth" id="id_selectMonth"></select> 月
+      <select name="selectDay" id="id_selectDay"></select> 日<br>
+      <div id="showMonthHoroscope">
+        <input name="radioMonthHoroscope" id="radioMonth" type="radio" value="month" checked><label for="radioMonth">誕生月</label>
+        <input name="radioMonthHoroscope" id="radioHoroscope" type="radio" value="horoscope"><label for="radioHoroscope">星座</label>
+      </div>
+      <div id="showStar">
+        <label for="checkboxStar">流れ星：</label><input type="checkbox" name="checkboxStar" id="checkboxStar" checked>
+      </div>
+      <!--input type="button" value="生成" onclick="rearrangeCards();" /-->
+      <input type="button" value="印刷" onclick="window.print();">
+    </form>
   </div>
 
+  <div id="first_page" class="print_pages">
+    <p id="version" class="ver">ver. 20210705</p>
+    <p id="memo" class="memo">1月1日</p>
 
-  <div id="first_page">
-      <p id="version" class="ver">ver. 20210705</p>
-      <p id="memo" class="memo">1月1日</p>
+    <div id="card-month">
+    </div>
 
-      <div id="card-month">
-      </div>
+    <div id="card-horoscope">
+    </div>
 
-      <div id="card-horoscope">
-      </div>
+    <div id="card-day">
+    </div>
+    
+    <img id="star2" class="star" src="img/star.svg">
+    <img id="star4" class="star" src="img/star.svg">
+    <img id="star6" class="star" src="img/star.svg">
+    <img id="star8" class="star" src="img/star.svg">
 
-      <div id="card-day">
-      </div>
-      
-      <img id="star2" class="star" src="img/star.svg">
-      <img id="star4" class="star" src="img/star.svg">
-      <img id="star6" class="star" src="img/star.svg">
-      <img id="star8" class="star" src="img/star.svg">
-
-      <img id="trim" src="img/trim200x280t5b12.svg">
-      <img id="trim" src="img/dot180x257.svg">
-
+    <img id="trim" src="img/trim200x280t5b12.svg">
+    <img id="trim" src="img/dot180x257.svg">
   </div>
 
   <div id="second_page" class="print_pages">
-    <div class="print_pages">
-      <img id="cake" src="img/cake180x247t23b27.svg">
-      <div id="birthdayname">るいちゃん</div>
-      <div id="happybirthday">お誕生日おめでとう</div>
-      <div id="birthdaymessage"></div>
-    </div>
+    <img id="cake" src="img/cake180x247t23b27.svg">
+    <div id="birthdayname">るいちゃん</div>
+    <div id="happybirthday">お誕生日おめでとう</div>
+    <div id="birthdaymessage"></div>
   </div>
 
-  <div id="third_page">
-
-    <div class="manual">
+  
+  <div id="manual" class="no_print">
       <h2>『誕生日おめでとう！』</h2>
 
       <p>
@@ -157,7 +154,6 @@
       交流会当日に試作したものは、誕生月ではなく星座を用いていました。デモ用の自分の誕生日のカードを作り終えた後に、どうせだったら碓氷氏の誕生日で作成しようと思い星座を調べたところ、誕生日が星座の境目に当たるようで、年によって星座が異なることが判明し、星座ではなく誕生月を使うことにしました。その後、解決策を思い付き星座でも生成できるようになりました。
       </p>
 
-    </div>
   </div>
 
   <script src="./js/script.js"></script>

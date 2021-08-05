@@ -1,29 +1,31 @@
 @page {
-  size: A4;
+  size: A4 landscape;
   margin: 0.0mm;
-}
-@page {
-  size: A4;
-  margin: 0;
 }
 
 html {
-  width: 210.0mm;
-  height: 297.0mm;
+  width: 100%;
+  height: 100%;
   margin: 0.0mm;
   padding: 0.0mm;
 }
 
 body {
-  width: 210.0mm;
-  height: 297.0mm;
+  width: 100%;
+  height: 100%;
   margin: 0.0mm;
   padding: 0.0mm;
 
   font-family: 'Kosugi Maru', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .print_pages {
+  size: A4 landscape;
+
   page-break-before: always;
   background-color: white;
   -webkit-print-color-adjust: exact;
@@ -33,39 +35,65 @@ body {
   display: none;
 }
 
-p.ver {width:30.0mm; height:10.0mm; position:absolute; top:5.0mm; left:160.0mm; 
+p.ver {
+  position: absolute;
+  
+  width: 30.0mm;
+  height: 10.0mm;
+  
+  top: 5.0mm;
+  left:160.0mm; 
+  
   font-size: 10pt;
 }
 
-p.memo {width:30.0mm; height:10.0mm; position:absolute; top:5.0mm; left:20.0mm; 
+p.memo {
+  position: absolute;
+
+  width: 30.0mm;
+  height: 10.0mm;
+
+  top:5.0mm;
+  left:20.0mm; 
+
   font-size: 10pt;
 }
 
-img#trim {width:200.0mm; height:280.0mm; position:absolute; top: calc(5.0mm + 0.0mm); left: calc(5.0mm + 0.0mm);}
-img#dot {width:180.0mm; height:257.0mm; position:absolute; top: calc(20.0mm + 0.0mm); left: calc(15.0mm + 0.0mm);}
+#first_page {
+  position: relative;
 
-img.card {width:89.0mm; height:63.0mm;}
-img#card1 {position:absolute; top:calc(20.0mm + 63.0mm * 0); left:16.0mm;}
-img#card2 {position:absolute; top:calc(20.0mm + 63.0mm * 0); left:105.0mm;}
-img#card3 {position:absolute; top:calc(20.0mm + 63.0mm * 1); left:16.0mm;}
-img#card4 {position:absolute; top:calc(20.0mm + 63.0mm * 1); left:105.0mm;}
-img#card5 {position:absolute; top:calc(20.0mm + 63.0mm * 2); left:16.0mm;}
-img#card6 {position:absolute; top:calc(20.0mm + 63.0mm * 2); left:105.0mm;}
-img#card7 {position:absolute; top:calc(20.0mm + 63.0mm * 3); left:16.0mm;}
-img#card8 {position:absolute; top:calc(20.0mm + 63.0mm * 3); left:105.0mm;}
+  width: 100%;
+  height: 100%; 
+
+  margin: -6.0mm;
+}
+
+#second_page {
+  position: relative;
+
+  width: 100%;
+  height: 100%; 
+
+  margin: -6.0mm;
+}
+
+
+img#trim {position: absolute; width: 200.0mm; height: 280.0mm; top: calc(5.0mm + 0.0mm); left: calc(5.0mm + 0.0mm);}
+img#dot {position: absolute; width: 180.0mm; height: 257.0mm; top: calc(20.0mm + 0.0mm); left: calc(15.0mm + 0.0mm);}
+
 
 img.star {width: 6.4mm; height: 4.8mm;}
-img#star2 {position:absolute; top:calc(20.0mm + 10.0mm + 63.0mm * 0 + 35.0mm); left:calc(16.0mm + 89.0mm + 20.0mm);}
-img#star4 {position:absolute; top:calc(20.0mm + 10.0mm + 63.0mm * 2 + 20.0mm); left:calc(16.0mm + 89.0mm + 43.0mm);}
-img#star6 {position:absolute; top:calc(20.0mm + 10.0mm + 63.0mm * 1 +  2.0mm); left:calc(16.0mm + 89.0mm + 20.0mm);}
-img#star8 {position:absolute; top:calc(20.0mm + 10.0mm + 63.0mm * 3 +  5.0mm); left:calc(16.0mm + 89.0mm + 65.0mm);}
+img#star2 {position: absolute; top: calc(20.0mm + 10.0mm + 63.0mm * 0 + 35.0mm); left: calc(16.0mm + 89.0mm + 20.0mm);}
+img#star4 {position: absolute; top: calc(20.0mm + 10.0mm + 63.0mm * 2 + 20.0mm); left: calc(16.0mm + 89.0mm + 43.0mm);}
+img#star6 {position: absolute; top: calc(20.0mm + 10.0mm + 63.0mm * 1 +  2.0mm); left: calc(16.0mm + 89.0mm + 20.0mm);}
+img#star8 {position: absolute; top: calc(20.0mm + 10.0mm + 63.0mm * 3 +  5.0mm); left: calc(16.0mm + 89.0mm + 65.0mm);}
 
   /*
       2 4
     1     6
       3 5
   */
-img.card-horoscope {width:16.0mm; height:16.0mm;}
+img.card-horoscope {width: 16.0mm; height: 16.0mm;}
 
 img#card-horoscope1-1 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 0);}
 img#card-horoscope1-2 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
@@ -125,10 +153,11 @@ img#card-horoscope8-6 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63
 
 
 div.card-month {
+  width: 23.0mm;
   font-family: 'Kosugi Maru', sans-serif;
   color: black;
+
   font-weight: bold;
-  width: 23.0mm;
   font-size: 24pt;
   text-align: right;
 }
@@ -194,11 +223,9 @@ div.card-day {
   font-family: 'Kosugi Maru', sans-serif;
   color: black;
   font-weight: normal;
-  width: 89.0mm;
-  height: 10.0mm;
+ 
   font-size: 16pt;
   text-align: center;
-  /* border: 1px solid; */
   padding: 0.0mm 2.5mm;
 }
 
@@ -237,30 +264,43 @@ div.card-day li {
 }
 
 
-img#cake {width: 180.0mm; height: 247.0mm; position: absolute; top: calc(23.0mm + 297.0mm); left: calc(15.0mm + 0.0mm); opacity: 1.0; z-index: 1;}
+img#cake {
+  position: absolute;
+
+  width: 180.0mm;
+  height: 247.0mm;
+
+  top: calc(23.0mm);
+  left: calc(15.0mm + 0.0mm);
+  opacity: 1.0; z-index: 1;
+}
 
 div#birthdayname {
+  position: absolute;
+
+  top: 112.0mm;
+  left: 58.0mm;
+
   font-family: 'Kosugi Maru', sans-serif;
   color: #ff9;
   font-weight: bold;
   font-size: 24pt;
   opacity: 1.0;
    
-  position: absolute;
-  top: calc(416.0mm - 7.0mm);
-  left: 58.0mm;
   z-index: 2;
 }
 
 div#happybirthday {
+  position: absolute;
+
+  top: 123.0mm;
+  left: 58.0mm;
+
   font-family: 'Kosugi Maru', sans-serif;
   color: #ff9;
   font-weight: bold;
   font-size: 24pt;
   opacity: 1.0;
   
-  position: absolute;
-  top: calc(427.0mm - 7.0mm);
-  left: 58.0mm;
   z-index: 3;
 }
