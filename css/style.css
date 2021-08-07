@@ -146,8 +146,21 @@ p.memo {
   font-size: xx-small;
 }
 
-img#trim {width: 400.0px; height: 560.0px; position: absolute; top: calc(10.0px); left: calc(10.0px + 0.0px);}
-img#dot {width: 360.0px; height: 514.0px; position: absolute; top: calc(40.0px); left: calc(30.0px + 0.0px);}
+img#trim {
+  position: absolute;
+  width: 400px;
+  height: 560px;
+  top: 10px;
+  left: 10px;
+}
+
+img#dot {
+  position: absolute;
+  width: 360px;
+  height: 514px;
+  top: 40px;
+  left: 30px;
+}
 
 img.star {width: 12.8px; height: 9.6px;}
 img#star2 {position:absolute; top:calc(40.0px + 20.0px + 126.0px * 0 + 70.0px); left:calc(32.0px + 178.0px +  40.0px);}
