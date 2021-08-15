@@ -129,29 +129,33 @@ div#showStar {
 p.ver {
   position: absolute;
 
-  width: 100px;
-  height: 15px;
-  top: 0px;
+  width: 60px;
+  height: 20px;
+
+  top: 20px;
   left: 320px;
-  font-size: xx-small;
+
+  font-size: 5pt;
 }
 
 p.memo {
   position: absolute;
 
-  width: 100px;
-  height: 15px;
-  top: 0px;
+  width: 60px;
+  height: 20px;
+
+  top: 20px;
   left: 40px;
-  font-size: xx-small;
+
+  font-size: 5pt;
 }
 
 img#trim {
   position: absolute;
-  width: 400px;
-  height: 560px;
-  top: 10px;
-  left: 10px;
+  width: 372px;
+  height: 520px;
+  top: 28px;
+  left: 24px;
 }
 
 img#dot {

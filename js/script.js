@@ -34,9 +34,27 @@
     const radioHoroscope = document.getElementById('radioHoroscope');
     
     putHTML();
+    // drawTrimMark();
+    
+
+    function drawTrimMark() {
+      var canvas = document.getElementById('trimMark');
+      var context = canvas.getContext('2d');
+
+      context.beginPath(); //パスのリセット
+      context.lineWidth =  0.1; //線幅
+      
+      mx = 210;
+      my = 0;
+      lx = 210;
+      ly = 297;
+      context.moveTo(mx, my); //線の始点
+      context.lineTo(lx, ly); //線の終点
+      context.stroke(); //描画      
+    }    
 
     function putHTML() {
-      var card_day_arr = [];
+      // var card_day_arr = [];
       for (let j = 1; j <= 8; j++) {
         for (let i = 1; i <= 6; i++) {
           var parentDiv = document.getElementById('card-month');

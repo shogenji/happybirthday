@@ -1,5 +1,5 @@
 @page {
-  size: A4 landscape;
+  size: A4;
   margin: 0.0mm;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .print_pages {
-  size: A4 landscape;
+  size: A4;
 
   page-break-before: always;
   background-color: white;
@@ -41,8 +41,8 @@ p.ver {
   width: 30.0mm;
   height: 10.0mm;
   
-  top: 5.0mm;
-  left:160.0mm; 
+  top: 10.0mm;
+  left: 160.0mm; 
   
   font-size: 10pt;
 }
@@ -53,8 +53,8 @@ p.memo {
   width: 30.0mm;
   height: 10.0mm;
 
-  top:5.0mm;
-  left:20.0mm; 
+  top: 10.0mm;
+  left: 20.0mm; 
 
   font-size: 10pt;
 }
@@ -65,7 +65,7 @@ p.memo {
   width: 100%;
   height: 100%; 
 
-  margin: -6.0mm;
+  margin: 0.0mm;
 }
 
 #second_page {
@@ -74,22 +74,27 @@ p.memo {
   width: 100%;
   height: 100%; 
 
-  margin: -6.0mm;
+  margin: 0.0mm;
 }
 
 
 img#trim {
   position: absolute;
-  width: 200.0mm;
-  height: 280.0mm;
-  top: 5.0mm;
-  left: 5.0mm;
+
+  width: 186.0mm;
+  height: 260.0mm;
+
+  top: 14.0mm;
+  left: 12.0mm;
 }
+
 
 img#dot {
   position: absolute;
+
   width: 180.0mm;
   height: 257.0mm;
+
   top: 20.0mm;
   left: 15.0mm;
 }
