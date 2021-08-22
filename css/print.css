@@ -1,26 +1,24 @@
+* {
+  margin: 0.0mm;
+  padding: 0.0mm;
+
+  box-sizing: border-box;
+}
+
 @page {
   size: A4;
-  margin: 0.0mm;
 }
 
 html {
   width: 100%;
   height: 100%;
-  margin: 0.0mm;
-  padding: 0.0mm;
 }
 
 body {
   width: 100%;
   height: 100%;
-  margin: 0.0mm;
-  padding: 0.0mm;
 
   font-family: 'Kosugi Maru', sans-serif;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .print_pages {
@@ -66,6 +64,9 @@ p.memo {
   height: 100%; 
 
   margin: 0.0mm;
+  padding: 0.0mm;
+
+  z-index: 10;
 }
 
 #second_page {
@@ -75,17 +76,23 @@ p.memo {
   height: 100%; 
 
   margin: 0.0mm;
+  padding: 0.0mm;
+
+  z-index: 10;
 }
 
 
 img#trim {
   position: absolute;
 
-  width: 186.0mm;
-  height: 260.0mm;
+  width: 210.0mm;
+  height: 290.0mm;
+  /* height: 297.0mm; */
 
-  top: 14.0mm;
-  left: 12.0mm;
+  top: 0.0mm;
+  left: 0.0mm;
+
+  z-index: -20;
 }
 
 
@@ -97,6 +104,8 @@ img#dot {
 
   top: 20.0mm;
   left: 15.0mm;
+
+  z-index: -10;
 }
 
 
@@ -116,61 +125,61 @@ img#star8 {position: absolute; top: calc(20.0mm + 10.0mm + 63.0mm * 3 +  5.0mm);
   */
 img.card-horoscope {width: 16.0mm; height: 16.0mm;}
 
-img#card-horoscope1-1 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 0);}
-img#card-horoscope1-2 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
-img#card-horoscope1-3 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
-img#card-horoscope1-4 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
-img#card-horoscope1-5 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
-img#card-horoscope1-6 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 3);}
+img#card-horoscope1-1 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 0);}
+img#card-horoscope1-2 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
+img#card-horoscope1-3 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
+img#card-horoscope1-4 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
+img#card-horoscope1-5 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
+img#card-horoscope1-6 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 20.0mm * 3);}
 
-img#card-horoscope2-1 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 0);}
-img#card-horoscope2-2 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
-img#card-horoscope2-3 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
-img#card-horoscope2-4 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
-img#card-horoscope2-5 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
-img#card-horoscope2-6 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 3);}
+img#card-horoscope2-1 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 0);}
+img#card-horoscope2-2 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
+img#card-horoscope2-3 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
+img#card-horoscope2-4 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
+img#card-horoscope2-5 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
+img#card-horoscope2-6 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 0); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 3);}
 
-img#card-horoscope3-1 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 20.0mm * 0);}
-img#card-horoscope3-2 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
-img#card-horoscope3-3 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
-img#card-horoscope3-4 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
-img#card-horoscope3-5 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
-img#card-horoscope3-6 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 20.0mm * 3);}
+img#card-horoscope3-1 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 20.0mm * 0);}
+img#card-horoscope3-2 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
+img#card-horoscope3-3 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
+img#card-horoscope3-4 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
+img#card-horoscope3-5 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
+img#card-horoscope3-6 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 20.0mm * 3);}
 
-img#card-horoscope4-1 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 0);}
-img#card-horoscope4-2 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
-img#card-horoscope4-3 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
-img#card-horoscope4-4 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
-img#card-horoscope4-5 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
-img#card-horoscope4-6 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 3);}
+img#card-horoscope4-1 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 0);}
+img#card-horoscope4-2 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
+img#card-horoscope4-3 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
+img#card-horoscope4-4 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
+img#card-horoscope4-5 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
+img#card-horoscope4-6 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 1); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 3);}
 
-img#card-horoscope5-1 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 20.0mm * 0);}
-img#card-horoscope5-2 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
-img#card-horoscope5-3 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
-img#card-horoscope5-4 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
-img#card-horoscope5-5 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
-img#card-horoscope5-6 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 20.0mm * 3);}
+img#card-horoscope5-1 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 20.0mm * 0);}
+img#card-horoscope5-2 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
+img#card-horoscope5-3 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
+img#card-horoscope5-4 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
+img#card-horoscope5-5 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
+img#card-horoscope5-6 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 20.0mm * 3);}
 
-img#card-horoscope6-1 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 0);}
-img#card-horoscope6-2 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
-img#card-horoscope6-3 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
-img#card-horoscope6-4 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
-img#card-horoscope6-5 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
-img#card-horoscope6-6 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 3);}
+img#card-horoscope6-1 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 0);}
+img#card-horoscope6-2 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
+img#card-horoscope6-3 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
+img#card-horoscope6-4 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
+img#card-horoscope6-5 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
+img#card-horoscope6-6 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 2); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 3);}
 
-img#card-horoscope7-1 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 20.0mm * 0);}
-img#card-horoscope7-2 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
-img#card-horoscope7-3 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
-img#card-horoscope7-4 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
-img#card-horoscope7-5 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
-img#card-horoscope7-6 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 20.0mm * 3);}
+img#card-horoscope7-1 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 20.0mm * 0);}
+img#card-horoscope7-2 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
+img#card-horoscope7-3 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 20.0mm * 1);}
+img#card-horoscope7-4 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
+img#card-horoscope7-5 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 20.0mm * 2);}
+img#card-horoscope7-6 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 20.0mm * 3);}
 
-img#card-horoscope8-1 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 0);}
-img#card-horoscope8-2 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
-img#card-horoscope8-3 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
-img#card-horoscope8-4 {position:absolute; top:calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
-img#card-horoscope8-5 {position:absolute; top:calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
-img#card-horoscope8-6 {position:absolute; top:calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 3);}
+img#card-horoscope8-1 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 0);}
+img#card-horoscope8-2 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
+img#card-horoscope8-3 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 1);}
+img#card-horoscope8-4 {position:absolute; top: calc(20.0mm + 32.0mm - 18.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
+img#card-horoscope8-5 {position:absolute; top: calc(20.0mm + 32.0mm +  2.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 2);}
+img#card-horoscope8-6 {position:absolute; top: calc(20.0mm + 32.0mm -  8.0mm + 63.0mm * 3); left:calc(16.0mm + 8.0mm + 89.0mm + 20.0mm * 3);}
 
 
 div.card-month {
@@ -183,61 +192,61 @@ div.card-month {
   text-align: right;
 }
 
-div#card-month1-1 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 0); left:calc(16.0mm + 30.0mm * 0);}
-div#card-month1-2 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 0); left:calc(16.0mm + 30.0mm * 1);}
-div#card-month1-3 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 0); left:calc(16.0mm + 30.0mm * 2);}
-div#card-month1-4 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 0); left:calc(16.0mm + 30.0mm * 0);}
-div#card-month1-5 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 0); left:calc(16.0mm + 30.0mm * 1);}
-div#card-month1-6 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 0); left:calc(16.0mm + 30.0mm * 2);}
+div#card-month1-1 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 0); left:calc(16.0mm + 30.0mm * 0);}
+div#card-month1-2 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 0); left:calc(16.0mm + 30.0mm * 1);}
+div#card-month1-3 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 0); left:calc(16.0mm + 30.0mm * 2);}
+div#card-month1-4 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 0); left:calc(16.0mm + 30.0mm * 0);}
+div#card-month1-5 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 0); left:calc(16.0mm + 30.0mm * 1);}
+div#card-month1-6 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 0); left:calc(16.0mm + 30.0mm * 2);}
 
-div#card-month2-1 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 0); left:calc(105.0mm + 30.0mm * 0);}
-div#card-month2-2 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 0); left:calc(105.0mm + 30.0mm * 1);}
-div#card-month2-3 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 0); left:calc(105.0mm + 30.0mm * 2);}
-div#card-month2-4 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 0); left:calc(105.0mm + 30.0mm * 0);}
-div#card-month2-5 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 0); left:calc(105.0mm + 30.0mm * 1);}
-div#card-month2-6 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 0); left:calc(105.0mm + 30.0mm * 2);}
+div#card-month2-1 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 0); left:calc(105.0mm + 30.0mm * 0);}
+div#card-month2-2 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 0); left:calc(105.0mm + 30.0mm * 1);}
+div#card-month2-3 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 0); left:calc(105.0mm + 30.0mm * 2);}
+div#card-month2-4 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 0); left:calc(105.0mm + 30.0mm * 0);}
+div#card-month2-5 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 0); left:calc(105.0mm + 30.0mm * 1);}
+div#card-month2-6 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 0); left:calc(105.0mm + 30.0mm * 2);}
 
-div#card-month3-1 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 1); left:calc(16.0mm + 30.0mm * 0);}
-div#card-month3-2 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 1); left:calc(16.0mm + 30.0mm * 1);}
-div#card-month3-3 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 1); left:calc(16.0mm + 30.0mm * 2);}
-div#card-month3-4 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 1); left:calc(16.0mm + 30.0mm * 0);}
-div#card-month3-5 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 1); left:calc(16.0mm + 30.0mm * 1);}
-div#card-month3-6 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 1); left:calc(16.0mm + 30.0mm * 2);}
+div#card-month3-1 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 1); left:calc(16.0mm + 30.0mm * 0);}
+div#card-month3-2 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 1); left:calc(16.0mm + 30.0mm * 1);}
+div#card-month3-3 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 1); left:calc(16.0mm + 30.0mm * 2);}
+div#card-month3-4 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 1); left:calc(16.0mm + 30.0mm * 0);}
+div#card-month3-5 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 1); left:calc(16.0mm + 30.0mm * 1);}
+div#card-month3-6 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 1); left:calc(16.0mm + 30.0mm * 2);}
 
-div#card-month4-1 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 1); left:calc(105.0mm + 30.0mm * 0);}
-div#card-month4-2 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 1); left:calc(105.0mm + 30.0mm * 1);}
-div#card-month4-3 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 1); left:calc(105.0mm + 30.0mm * 2);}
-div#card-month4-4 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 1); left:calc(105.0mm + 30.0mm * 0);}
-div#card-month4-5 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 1); left:calc(105.0mm + 30.0mm * 1);}
-div#card-month4-6 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 1); left:calc(105.0mm + 30.0mm * 2);}
+div#card-month4-1 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 1); left:calc(105.0mm + 30.0mm * 0);}
+div#card-month4-2 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 1); left:calc(105.0mm + 30.0mm * 1);}
+div#card-month4-3 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 1); left:calc(105.0mm + 30.0mm * 2);}
+div#card-month4-4 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 1); left:calc(105.0mm + 30.0mm * 0);}
+div#card-month4-5 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 1); left:calc(105.0mm + 30.0mm * 1);}
+div#card-month4-6 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 1); left:calc(105.0mm + 30.0mm * 2);}
 
-div#card-month5-1 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 2); left:calc(16.0mm + 30.0mm * 0);}
-div#card-month5-2 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 2); left:calc(16.0mm + 30.0mm * 1);}
-div#card-month5-3 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 2); left:calc(16.0mm + 30.0mm * 2);}
-div#card-month5-4 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 2); left:calc(16.0mm + 30.0mm * 0);}
-div#card-month5-5 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 2); left:calc(16.0mm + 30.0mm * 1);}
-div#card-month5-6 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 2); left:calc(16.0mm + 30.0mm * 2);}
+div#card-month5-1 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 2); left:calc(16.0mm + 30.0mm * 0);}
+div#card-month5-2 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 2); left:calc(16.0mm + 30.0mm * 1);}
+div#card-month5-3 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 2); left:calc(16.0mm + 30.0mm * 2);}
+div#card-month5-4 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 2); left:calc(16.0mm + 30.0mm * 0);}
+div#card-month5-5 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 2); left:calc(16.0mm + 30.0mm * 1);}
+div#card-month5-6 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 2); left:calc(16.0mm + 30.0mm * 2);}
 
-div#card-month6-1 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 2); left:calc(105.0mm + 30.0mm * 0);}
-div#card-month6-2 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 2); left:calc(105.0mm + 30.0mm * 1);}
-div#card-month6-3 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 2); left:calc(105.0mm + 30.0mm * 2);}
-div#card-month6-4 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 2); left:calc(105.0mm + 30.0mm * 0);}
-div#card-month6-5 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 2); left:calc(105.0mm + 30.0mm * 1);}
-div#card-month6-6 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 2); left:calc(105.0mm + 30.0mm * 2);}
+div#card-month6-1 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 2); left:calc(105.0mm + 30.0mm * 0);}
+div#card-month6-2 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 2); left:calc(105.0mm + 30.0mm * 1);}
+div#card-month6-3 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 2); left:calc(105.0mm + 30.0mm * 2);}
+div#card-month6-4 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 2); left:calc(105.0mm + 30.0mm * 0);}
+div#card-month6-5 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 2); left:calc(105.0mm + 30.0mm * 1);}
+div#card-month6-6 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 2); left:calc(105.0mm + 30.0mm * 2);}
 
-div#card-month7-1 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 3); left:calc(16.0mm + 30.0mm * 0);}
-div#card-month7-2 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 3); left:calc(16.0mm + 30.0mm * 1);}
-div#card-month7-3 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 3); left:calc(16.0mm + 30.0mm * 2);}
-div#card-month7-4 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 3); left:calc(16.0mm + 30.0mm * 0);}
-div#card-month7-5 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 3); left:calc(16.0mm + 30.0mm * 1);}
-div#card-month7-6 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 3); left:calc(16.0mm + 30.0mm * 2);}
+div#card-month7-1 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 3); left:calc(16.0mm + 30.0mm * 0);}
+div#card-month7-2 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 3); left:calc(16.0mm + 30.0mm * 1);}
+div#card-month7-3 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 3); left:calc(16.0mm + 30.0mm * 2);}
+div#card-month7-4 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 3); left:calc(16.0mm + 30.0mm * 0);}
+div#card-month7-5 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 3); left:calc(16.0mm + 30.0mm * 1);}
+div#card-month7-6 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 3); left:calc(16.0mm + 30.0mm * 2);}
 
-div#card-month8-1 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 3); left:calc(105.0mm + 30.0mm * 0);}
-div#card-month8-2 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 3); left:calc(105.0mm + 30.0mm * 1);}
-div#card-month8-3 {position:absolute; top:calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 3); left:calc(105.0mm + 30.0mm * 2);}
-div#card-month8-4 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 3); left:calc(105.0mm + 30.0mm * 0);}
-div#card-month8-5 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 3); left:calc(105.0mm + 30.0mm * 1);}
-div#card-month8-6 {position:absolute; top:calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 3); left:calc(105.0mm + 30.0mm * 2);}
+div#card-month8-1 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 3); left:calc(105.0mm + 30.0mm * 0);}
+div#card-month8-2 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 3); left:calc(105.0mm + 30.0mm * 1);}
+div#card-month8-3 {position:absolute; top: calc(20.0mm + 18.0mm +  0.0mm + 63.0mm * 3); left:calc(105.0mm + 30.0mm * 2);}
+div#card-month8-4 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 3); left:calc(105.0mm + 30.0mm * 0);}
+div#card-month8-5 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 3); left:calc(105.0mm + 30.0mm * 1);}
+div#card-month8-6 {position:absolute; top: calc(20.0mm + 18.0mm + 19.0mm + 63.0mm * 3); left:calc(105.0mm + 30.0mm * 2);}
 
 
 div.card-day {
@@ -250,22 +259,22 @@ div.card-day {
   padding: 0.0mm 2.5mm;
 }
 
-div#card-day1-1 {position:absolute; top:calc(20.0mm +  2.0mm + 63.0mm * 0); left:calc(16.0mm + 89.0mm * 0);}
-div#card-day1-2 {position:absolute; top:calc(20.0mm + 52.0mm + 63.0mm * 0); left:calc(16.0mm + 89.0mm * 0);}
-div#card-day2-1 {position:absolute; top:calc(20.0mm +  2.0mm + 63.0mm * 0); left:calc(16.0mm + 89.0mm * 1);}
-div#card-day2-2 {position:absolute; top:calc(20.0mm + 52.0mm + 63.0mm * 0); left:calc(16.0mm + 89.0mm * 1);}
-div#card-day3-1 {position:absolute; top:calc(20.0mm +  2.0mm + 63.0mm * 1); left:calc(16.0mm + 89.0mm * 0);}
-div#card-day3-2 {position:absolute; top:calc(20.0mm + 52.0mm + 63.0mm * 1); left:calc(16.0mm + 89.0mm * 0);}
-div#card-day4-1 {position:absolute; top:calc(20.0mm +  2.0mm + 63.0mm * 1); left:calc(16.0mm + 89.0mm * 1);}
-div#card-day4-2 {position:absolute; top:calc(20.0mm + 52.0mm + 63.0mm * 1); left:calc(16.0mm + 89.0mm * 1);}
-div#card-day5-1 {position:absolute; top:calc(20.0mm +  2.0mm + 63.0mm * 2); left:calc(16.0mm + 89.0mm * 0);}
-div#card-day5-2 {position:absolute; top:calc(20.0mm + 52.0mm + 63.0mm * 2); left:calc(16.0mm + 89.0mm * 0);}
-div#card-day6-1 {position:absolute; top:calc(20.0mm +  2.0mm + 63.0mm * 2); left:calc(16.0mm + 89.0mm * 1);}
-div#card-day6-2 {position:absolute; top:calc(20.0mm + 52.0mm + 63.0mm * 2); left:calc(16.0mm + 89.0mm * 1);}
-div#card-day7-1 {position:absolute; top:calc(20.0mm +  2.0mm + 63.0mm * 3); left:calc(16.0mm + 89.0mm * 0);}
-div#card-day7-2 {position:absolute; top:calc(20.0mm + 52.0mm + 63.0mm * 3); left:calc(16.0mm + 89.0mm * 0);}
-div#card-day8-1 {position:absolute; top:calc(20.0mm +  2.0mm + 63.0mm * 3); left:calc(16.0mm + 89.0mm * 1);}
-div#card-day8-2 {position:absolute; top:calc(20.0mm + 52.0mm + 63.0mm * 3); left:calc(16.0mm + 89.0mm * 1);}
+div#card-day1-1 {position:absolute; top: calc(20.0mm +  2.0mm + 63.0mm * 0); left:calc(16.0mm + 89.0mm * 0);}
+div#card-day1-2 {position:absolute; top: calc(20.0mm + 52.0mm + 63.0mm * 0); left:calc(16.0mm + 89.0mm * 0);}
+div#card-day2-1 {position:absolute; top: calc(20.0mm +  2.0mm + 63.0mm * 0); left:calc(16.0mm + 89.0mm * 1);}
+div#card-day2-2 {position:absolute; top: calc(20.0mm + 52.0mm + 63.0mm * 0); left:calc(16.0mm + 89.0mm * 1);}
+div#card-day3-1 {position:absolute; top: calc(20.0mm +  2.0mm + 63.0mm * 1); left:calc(16.0mm + 89.0mm * 0);}
+div#card-day3-2 {position:absolute; top: calc(20.0mm + 52.0mm + 63.0mm * 1); left:calc(16.0mm + 89.0mm * 0);}
+div#card-day4-1 {position:absolute; top: calc(20.0mm +  2.0mm + 63.0mm * 1); left:calc(16.0mm + 89.0mm * 1);}
+div#card-day4-2 {position:absolute; top: calc(20.0mm + 52.0mm + 63.0mm * 1); left:calc(16.0mm + 89.0mm * 1);}
+div#card-day5-1 {position:absolute; top: calc(20.0mm +  2.0mm + 63.0mm * 2); left:calc(16.0mm + 89.0mm * 0);}
+div#card-day5-2 {position:absolute; top: calc(20.0mm + 52.0mm + 63.0mm * 2); left:calc(16.0mm + 89.0mm * 0);}
+div#card-day6-1 {position:absolute; top: calc(20.0mm +  2.0mm + 63.0mm * 2); left:calc(16.0mm + 89.0mm * 1);}
+div#card-day6-2 {position:absolute; top: calc(20.0mm + 52.0mm + 63.0mm * 2); left:calc(16.0mm + 89.0mm * 1);}
+div#card-day7-1 {position:absolute; top: calc(20.0mm +  2.0mm + 63.0mm * 3); left:calc(16.0mm + 89.0mm * 0);}
+div#card-day7-2 {position:absolute; top: calc(20.0mm + 52.0mm + 63.0mm * 3); left:calc(16.0mm + 89.0mm * 0);}
+div#card-day8-1 {position:absolute; top: calc(20.0mm +  2.0mm + 63.0mm * 3); left:calc(16.0mm + 89.0mm * 1);}
+div#card-day8-2 {position:absolute; top: calc(20.0mm + 52.0mm + 63.0mm * 3); left:calc(16.0mm + 89.0mm * 1);}
 
 
 div.card-day ul {
@@ -288,40 +297,46 @@ div.card-day li {
 img#cake {
   position: absolute;
 
-  width: 180.0mm;
-  height: 247.0mm;
+  width: 210.0mm;
+  height: 290.0mm;
+  /* height: 297.0mm; */
 
-  top: calc(23.0mm);
-  left: calc(15.0mm + 0.0mm);
-  opacity: 1.0; z-index: 1;
+  top: 0.0mm;
+  left: 0.0mm;
+  
+  opacity: 1.0;
+
+  z-index: -20;
 }
 
 div#birthdayname {
   position: absolute;
 
-  top: 112.0mm;
-  left: 58.0mm;
+  top: 111.0mm;
+  left: 60.0mm;
 
   font-family: 'Kosugi Maru', sans-serif;
   color: #ff9;
   font-weight: bold;
   font-size: 24pt;
+
   opacity: 1.0;
    
-  z-index: 2;
+  z-index: 0;
 }
 
 div#happybirthday {
   position: absolute;
 
-  top: 123.0mm;
-  left: 58.0mm;
+  top: 122.0mm;
+  left: 60.0mm;
 
   font-family: 'Kosugi Maru', sans-serif;
   color: #ff9;
   font-weight: bold;
   font-size: 24pt;
+
   opacity: 1.0;
-  
-  z-index: 3;
+
+  z-index: 0;
 }
