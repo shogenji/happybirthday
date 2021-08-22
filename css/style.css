@@ -48,6 +48,8 @@ body {
 
   padding: 0px 10px 10px 10px;
 
+  line-height: 150%;
+
   border: 0px solid #f00;
   box-sizing: border-box;
 
@@ -104,16 +106,38 @@ body {
   width: calc(420.0px + 10.0px + 420.0px + 10.0px);
 
   margin: 10px;
-
-  padding: 10.0px;
-  font-size: small;
-  text-align: justify;
-  line-height: 140%;
+  padding: 10px;
 
   border: 0px solid #f00;
   box-sizing: border-box;
 
   clear: both;
+}
+
+#manual h1, h2, h3 {
+  margin: 20px 0px;
+}
+
+#manual p {
+  margin: 10px 0px;
+
+  font-family: 'Kosugi Maru', sans-serif;
+  color: #000;
+  font-weight: normal;
+  font-size: 12pt;
+  text-align: justify;
+  line-height: 150%;
+}
+
+#manual ul {
+  margin: 10px 0px 10px 30px;
+
+  font-family: 'Kosugi Maru', sans-serif;
+  color: #000;
+  font-weight: normal;
+  font-size: 12pt;
+  text-align: justify;
+  line-height: 150%;
 }
 
 
