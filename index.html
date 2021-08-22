@@ -30,20 +30,29 @@
   
   <div id="input_form" class="no_print">
     <form name="form" id="id_form" action="">
-      名　前：
-      <input name="textBoxName" id="id_textBoxName" type="text" size="25" value="るいちゃん" /><br>
-      誕生日：
-      <select name="selectMonth" id="id_selectMonth"></select> 月
-      <select name="selectDay" id="id_selectDay"></select> 日<br>
-      <div id="showMonthHoroscope">
+      <div id="formName">
+        名　前：
+        <input name="textBoxName" id="id_textBoxName" type="text" size="25" value="るいちゃん" /><br>
+      </div>
+      <div id="formBirthday">
+        誕生日：
+        <select name="selectMonth" id="id_selectMonth"></select> 月
+        <select name="selectDay" id="id_selectDay"></select> 日<br>
+      </div>
+      <div id="formMonthHoroscope">
         <input name="radioMonthHoroscope" id="radioMonth" type="radio" value="month" checked><label for="radioMonth">誕生月</label>
         <input name="radioMonthHoroscope" id="radioHoroscope" type="radio" value="horoscope"><label for="radioHoroscope">星座</label>
       </div>
-      <div id="showStar">
+      <div id="formStar">
         <label for="checkboxStar">流れ星：</label><input type="checkbox" name="checkboxStar" id="checkboxStar" checked>
       </div>
-      <input type="button" value="印刷" onclick="window.print();">
-    </form>
+      <!--div id="formDot">
+        <label for="checkboxDot">ペンシルドット：</label><input type="checkbox" name="checkboxDot" id="checkboxDot" checked>
+      </div-->
+      <div id="formPrint">
+        <input type="button" value="印刷" onclick="window.print();">
+      </div>
+      </form>
   </div>
 
   <div id="first_page" class="print_pages">
